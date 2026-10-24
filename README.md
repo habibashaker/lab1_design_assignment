@@ -9,8 +9,26 @@ This project implements a ROS 2 system for controlling the Turtlesim simulator u
 - Abdelrahman ahmed : 9410
 
 ## Packages
-- `my_interfaces`: Custom message, action, and service definitions.
-- `turtle_control`: Movement action server, reset service, speed service, and square action server.
+- `my_interfaces`:
+
+Target.msg: Contains the target x, y, and yaw.
+
+GoToPose.action: Defines the movement goal, result, and feedback.
+
+Square.action: Defines the square side length, result, and completed-side feedback.
+
+Speed.srv: Requests new maximum linear and angular speed limits.
+
+- `turtle_control`:
+
+Contains the Python ROS 2 nodes:
+
+go_to_pose_server: Moves the turtle toward a target pose.
+
+reset_server: Clears the screen and returns the turtle to its initial pose
+
+square_server: Draws a square by sending four movement goals.
+
 
 ## Build Instructions
 
