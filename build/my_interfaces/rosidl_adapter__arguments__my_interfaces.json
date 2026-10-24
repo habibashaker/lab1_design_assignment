@@ -1,0 +1,9 @@
+{
+  "package_name": "my_interfaces",
+  "non_idl_tuples": [
+    "/home/habiba/uni_ws/src/my_interfaces:msg/Target.msg",
+    "/home/habiba/uni_ws/src/my_interfaces:srv/Speed.srv",
+    "/home/habiba/uni_ws/src/my_interfaces:action/GoToPose.action",
+    "/home/habiba/uni_ws/src/my_interfaces:action/Square.action"
+  ]
+}

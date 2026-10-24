@@ -1,0 +1,14 @@
+from my_interfaces.action._go_to_pose import GoToPose  # noqa: F401
+from my_interfaces.action._go_to_pose import GoToPose_GetResult_Event  # noqa: F401
+from my_interfaces.action._go_to_pose import GoToPose_GetResult_Request  # noqa: F401
+from my_interfaces.action._go_to_pose import GoToPose_GetResult_Response  # noqa: F401
+from my_interfaces.action._go_to_pose import GoToPose_SendGoal_Event  # noqa: F401
+from my_interfaces.action._go_to_pose import GoToPose_SendGoal_Request  # noqa: F401
+from my_interfaces.action._go_to_pose import GoToPose_SendGoal_Response  # noqa: F401
+from my_interfaces.action._square import Square  # noqa: F401
+from my_interfaces.action._square import Square_GetResult_Event  # noqa: F401
+from my_interfaces.action._square import Square_GetResult_Request  # noqa: F401
+from my_interfaces.action._square import Square_GetResult_Response  # noqa: F401
+from my_interfaces.action._square import Square_SendGoal_Event  # noqa: F401
+from my_interfaces.action._square import Square_SendGoal_Request  # noqa: F401
+from my_interfaces.action._square import Square_SendGoal_Response  # noqa: F401

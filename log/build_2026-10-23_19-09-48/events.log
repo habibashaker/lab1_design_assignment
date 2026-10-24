@@ -1,0 +1,513 @@
+[0.000000] (-) TimerEvent: {}
+[0.000771] (my_interfaces) JobQueued: {'identifier': 'my_interfaces', 'dependencies': OrderedDict()}
+[0.001308] (turtle_control) JobQueued: {'identifier': 'turtle_control', 'dependencies': OrderedDict({'my_interfaces': '/home/habiba/uni_ws/install/my_interfaces'})}
+[0.001384] (my_interfaces) JobStarted: {'identifier': 'my_interfaces'}
+[0.013896] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'cmake'}
+[0.014738] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'build'}
+[0.015318] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/habiba/uni_ws/build/my_interfaces', '--', '-j12', '-l12'], 'cwd': '/home/habiba/uni_ws/build/my_interfaces', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LINOROBOT2_BASE': '4wd', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/3062-1-habiba-Precision-3551_TIME1445995', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'habiba', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'STM32CubeMX_PATH': '/home/habiba/STM32CubeMX', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/habiba/uni_ws/install/my_interfaces/lib:/home/habiba/uros_ws/install/micro_ros_agent/lib:/home/habiba/uros_ws/install/micro_ros_msgs/lib:/home/habiba/uros_ws/install/drive_base_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/habiba', 'OLDPWD': '/home/habiba/uni_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2671', 'SYSTEMD_EXEC_PID': '3062', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5556', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/habiba/uni_ws/install:/home/habiba/uros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'habiba', 'JOURNAL_STREAM': '8:23122', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'habiba', 'STM32_PRG_PATH': '/home/habiba/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/habiba/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/habiba-Precision-3551:@/tmp/.ICE-unix/3018,unix/habiba-Precision-3551:/tmp/.ICE-unix/3018', 'INVOCATION_ID': '4648c3388b7b464f912cc319a7412e9b', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/habiba/uni_ws/install/my_interfaces:/home/habiba/uni_ws/install/interfaces:/home/habiba/uros_ws/install/micro_ros_setup:/home/habiba/uros_ws/install/micro_ros_agent:/home/habiba/uros_ws/install/micro_ros_msgs:/home/habiba/uros_ws/install/drive_base_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:d471cf8b-8996-49df-87c8-8647669b3511', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/habiba/uni_ws/build/my_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:/home/habiba/uros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/habiba/uros_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/habiba/uni_ws/install/my_interfaces:/home/habiba/uros_ws/install/micro_ros_setup:/home/habiba/uros_ws/install/micro_ros_agent:/home/habiba/uros_ws/install/micro_ros_msgs:/home/habiba/uros_ws/install/drive_base_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/habiba/uni_ws/install/interfaces:/opt/ros/jazzy'}), 'shell': False}
+[0.047182] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099603] (-) TimerEvent: {}
+[0.191533] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.195928] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.199738] (-) TimerEvent: {}
+[0.243742] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.282294] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.284171] (my_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.299834] (-) TimerEvent: {}
+[0.400183] (-) TimerEvent: {}
+[0.500563] (-) TimerEvent: {}
+[0.600841] (-) TimerEvent: {}
+[0.701146] (-) TimerEvent: {}
+[0.761256] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.801262] (-) TimerEvent: {}
+[0.895316] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.901398] (-) TimerEvent: {}
+[1.001735] (-) TimerEvent: {}
+[1.074893] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.076272] (my_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.101829] (-) TimerEvent: {}
+[1.202062] (-) TimerEvent: {}
+[1.302287] (-) TimerEvent: {}
+[1.402568] (-) TimerEvent: {}
+[1.456127] (my_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.502653] (-) TimerEvent: {}
+[1.512102] (my_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.516902] (my_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.518033] (my_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.521680] (my_interfaces) StdoutLine: {'line': b'-- Configuring done (1.5s)\n'}
+[1.574771] (my_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.589649] (my_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/habiba/uni_ws/build/my_interfaces\n'}
+[1.602755] (-) TimerEvent: {}
+[1.633145] (my_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.633801] (my_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[1.648311] (my_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_my_interfaces\n'}
+[1.702864] (-) TimerEvent: {}
+[1.803153] (-) TimerEvent: {}
+[1.904814] (-) TimerEvent: {}
+[1.950885] (my_interfaces) StdoutLine: {'line': b'[  3%] Built target my_interfaces__rosidl_generator_type_description\n'}
+[1.961791] (my_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.977027] (my_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.993240] (my_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.004975] (-) TimerEvent: {}
+[2.029585] (my_interfaces) StdoutLine: {'line': b'writing my_interfaces.egg-info/PKG-INFO\n'}
+[2.029997] (my_interfaces) StdoutLine: {'line': b'writing dependency_links to my_interfaces.egg-info/dependency_links.txt\n'}
+[2.030241] (my_interfaces) StdoutLine: {'line': b'writing top-level names to my_interfaces.egg-info/top_level.txt\n'}
+[2.086878] (my_interfaces) StdoutLine: {'line': b'[  6%] Built target my_interfaces__rs\n'}
+[2.105095] (-) TimerEvent: {}
+[2.138576] (my_interfaces) StdoutLine: {'line': b"reading manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[2.139292] (my_interfaces) StdoutLine: {'line': b"writing manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[2.183020] (my_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_my_interfaces_egg\n'}
+[2.205190] (-) TimerEvent: {}
+[2.305482] (-) TimerEvent: {}
+[2.405747] (-) TimerEvent: {}
+[2.505955] (-) TimerEvent: {}
+[2.606205] (-) TimerEvent: {}
+[2.706425] (-) TimerEvent: {}
+[2.806785] (-) TimerEvent: {}
+[2.907013] (-) TimerEvent: {}
+[2.973563] (my_interfaces) StdoutLine: {'line': b'[  6%] Built target my_interfaces__cpp\n'}
+[3.007095] (-) TimerEvent: {}
+[3.107317] (-) TimerEvent: {}
+[3.141623] (my_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/target__functions.c.o\x1b[0m\n'}
+[3.144992] (my_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/speed__functions.c.o\x1b[0m\n'}
+[3.146473] (my_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/speed__description.c.o\x1b[0m\n'}
+[3.146654] (my_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/go_to_pose__functions.c.o\x1b[0m\n'}
+[3.146785] (my_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/speed__type_support.c.o\x1b[0m\n'}
+[3.146910] (my_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/target__description.c.o\x1b[0m\n'}
+[3.147028] (my_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/go_to_pose__description.c.o\x1b[0m\n'}
+[3.147126] (my_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/square__description.c.o\x1b[0m\n'}
+[3.147231] (my_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/go_to_pose__type_support.c.o\x1b[0m\n'}
+[3.149878] (my_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[3.150681] (my_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/square__type_support.c.o\x1b[0m\n'}
+[3.154681] (my_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/square__functions.c.o\x1b[0m\n'}
+[3.211440] (-) TimerEvent: {}
+[3.311761] (-) TimerEvent: {}
+[3.412131] (-) TimerEvent: {}
+[3.434052] (my_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.478374] (my_interfaces) StdoutLine: {'line': b'[ 26%] Built target my_interfaces__rosidl_generator_c\n'}
+[3.493657] (my_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.493953] (my_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.494102] (my_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.494236] (my_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.494379] (my_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.494520] (my_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.512233] (-) TimerEvent: {}
+[3.612583] (-) TimerEvent: {}
+[3.712902] (-) TimerEvent: {}
+[3.813235] (-) TimerEvent: {}
+[3.913555] (-) TimerEvent: {}
+[4.013875] (-) TimerEvent: {}
+[4.082352] (my_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/speed__type_support.cpp.o\x1b[0m\n'}
+[4.082650] (my_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/square__type_support.cpp.o\x1b[0m\n'}
+[4.082794] (my_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[4.082917] (my_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.113963] (-) TimerEvent: {}
+[4.214219] (-) TimerEvent: {}
+[4.315832] (my_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/speed__type_support.c.o\x1b[0m\n'}
+[4.316094] (-) TimerEvent: {}
+[4.316225] (my_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[4.316829] (my_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/go_to_pose__type_support.c.o\x1b[0m\n'}
+[4.327647] (my_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[4.328299] (my_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/square__type_support.c.o\x1b[0m\n'}
+[4.390175] (my_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/srv/speed__type_support.cpp.o\x1b[0m\n'}
+[4.402133] (my_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/action/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.416226] (-) TimerEvent: {}
+[4.426034] (my_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/action/square__type_support.cpp.o\x1b[0m\n'}
+[4.507160] (my_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.516325] (-) TimerEvent: {}
+[4.519821] (my_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.541515] (my_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[4.550170] (my_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/action/detail/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.552700] (my_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/srv/detail/speed__type_support.cpp.o\x1b[0m\n'}
+[4.557943] (my_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/action/detail/square__type_support.cpp.o\x1b[0m\n'}
+[4.572451] (my_interfaces) StdoutLine: {'line': b'[ 63%] Built target my_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.592727] (my_interfaces) StdoutLine: {'line': b'[ 63%] Built target my_interfaces__rosidl_typesupport_c\n'}
+[4.616459] (-) TimerEvent: {}
+[4.719401] (-) TimerEvent: {}
+[4.790911] (my_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/srv/detail/dds_fastrtps/speed__type_support.cpp.o\x1b[0m\n'}
+[4.792049] (my_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[4.801394] (my_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/action/detail/dds_fastrtps/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.807336] (my_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/action/detail/dds_fastrtps/square__type_support.cpp.o\x1b[0m\n'}
+[4.819505] (-) TimerEvent: {}
+[4.919814] (-) TimerEvent: {}
+[5.023777] (-) TimerEvent: {}
+[5.124125] (-) TimerEvent: {}
+[5.173788] (my_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[5.176471] (my_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/action/detail/go_to_pose__type_support_c.cpp.o\x1b[0m\n'}
+[5.176813] (my_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/srv/detail/speed__type_support_c.cpp.o\x1b[0m\n'}
+[5.224242] (-) TimerEvent: {}
+[5.305736] (my_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/action/detail/square__type_support_c.cpp.o\x1b[0m\n'}
+[5.307499] (my_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.324682] (-) TimerEvent: {}
+[5.425031] (-) TimerEvent: {}
+[5.502159] (my_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_interfaces__rosidl_typesupport_cpp\n'}
+[5.525706] (-) TimerEvent: {}
+[5.626780] (-) TimerEvent: {}
+[5.727098] (-) TimerEvent: {}
+[5.828374] (-) TimerEvent: {}
+[5.930906] (-) TimerEvent: {}
+[5.943743] (my_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.031023] (-) TimerEvent: {}
+[6.096034] (my_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[6.131103] (-) TimerEvent: {}
+[6.183928] (my_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.231237] (-) TimerEvent: {}
+[6.277155] (my_interfaces) StdoutLine: {'line': b'[ 80%] Built target my_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[6.331368] (-) TimerEvent: {}
+[6.431576] (-) TimerEvent: {}
+[6.437453] (my_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.525636] (my_interfaces) StdoutLine: {'line': b'[ 81%] Built target my_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[6.531661] (-) TimerEvent: {}
+[6.544930] (my_interfaces) StdoutLine: {'line': b'[ 81%] Built target my_interfaces\n'}
+[6.567384] (my_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.631740] (-) TimerEvent: {}
+[6.731934] (-) TimerEvent: {}
+[6.832143] (-) TimerEvent: {}
+[6.932399] (-) TimerEvent: {}
+[7.032592] (-) TimerEvent: {}
+[7.132799] (-) TimerEvent: {}
+[7.233027] (-) TimerEvent: {}
+[7.333288] (-) TimerEvent: {}
+[7.433526] (-) TimerEvent: {}
+[7.533721] (-) TimerEvent: {}
+[7.633922] (-) TimerEvent: {}
+[7.734155] (-) TimerEvent: {}
+[7.834405] (-) TimerEvent: {}
+[7.934671] (-) TimerEvent: {}
+[8.034864] (-) TimerEvent: {}
+[8.111497] (my_interfaces) StdoutLine: {'line': b'[ 83%] Built target my_interfaces__py\n'}
+[8.134960] (-) TimerEvent: {}
+[8.138088] (my_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/msg/_target_s.c.o\x1b[0m\n'}
+[8.138417] (my_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_speed_s.c.o\x1b[0m\n'}
+[8.138567] (my_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_go_to_pose_s.c.o\x1b[0m\n'}
+[8.138761] (my_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_square_s.c.o\x1b[0m\n'}
+[8.235056] (-) TimerEvent: {}
+[8.335288] (-) TimerEvent: {}
+[8.370091] (my_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[8.415216] (my_interfaces) StdoutLine: {'line': b'[ 90%] Built target my_interfaces__rosidl_generator_py\n'}
+[8.435403] (-) TimerEvent: {}
+[8.438701] (my_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.438949] (my_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[8.439600] (my_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[8.535495] (-) TimerEvent: {}
+[8.626546] (my_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.630900] (my_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.631593] (my_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.635593] (-) TimerEvent: {}
+[8.657989] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces_s__rosidl_typesupport_c\n'}
+[8.665747] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[8.666011] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[8.677856] (my_interfaces) CommandEnded: {'returncode': 0}
+[8.678595] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'install'}
+[8.687112] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/habiba/uni_ws/build/my_interfaces'], 'cwd': '/home/habiba/uni_ws/build/my_interfaces', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LINOROBOT2_BASE': '4wd', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/3062-1-habiba-Precision-3551_TIME1445995', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'habiba', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'STM32CubeMX_PATH': '/home/habiba/STM32CubeMX', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/habiba/uni_ws/install/my_interfaces/lib:/home/habiba/uros_ws/install/micro_ros_agent/lib:/home/habiba/uros_ws/install/micro_ros_msgs/lib:/home/habiba/uros_ws/install/drive_base_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/habiba', 'OLDPWD': '/home/habiba/uni_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2671', 'SYSTEMD_EXEC_PID': '3062', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5556', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/habiba/uni_ws/install:/home/habiba/uros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'habiba', 'JOURNAL_STREAM': '8:23122', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'habiba', 'STM32_PRG_PATH': '/home/habiba/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/habiba/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/habiba-Precision-3551:@/tmp/.ICE-unix/3018,unix/habiba-Precision-3551:/tmp/.ICE-unix/3018', 'INVOCATION_ID': '4648c3388b7b464f912cc319a7412e9b', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/habiba/uni_ws/install/my_interfaces:/home/habiba/uni_ws/install/interfaces:/home/habiba/uros_ws/install/micro_ros_setup:/home/habiba/uros_ws/install/micro_ros_agent:/home/habiba/uros_ws/install/micro_ros_msgs:/home/habiba/uros_ws/install/drive_base_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:d471cf8b-8996-49df-87c8-8647669b3511', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/habiba/uni_ws/build/my_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:/home/habiba/uros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/habiba/uros_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/habiba/uni_ws/install/my_interfaces:/home/habiba/uros_ws/install/micro_ros_setup:/home/habiba/uros_ws/install/micro_ros_agent:/home/habiba/uros_ws/install/micro_ros_msgs:/home/habiba/uros_ws/install/drive_base_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/habiba/uni_ws/install/interfaces:/opt/ros/jazzy'}), 'shell': False}
+[8.697801] (my_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.697997] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_interfaces\n'}
+[8.698093] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/msg/Target.json\n'}
+[8.698222] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/srv/Speed.json\n'}
+[8.698313] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/action/GoToPose.json\n'}
+[8.698497] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/action/Square.json\n'}
+[8.698788] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[8.698904] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[8.698993] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/target.h\n'}
+[8.699077] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.699241] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[8.699323] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.c\n'}
+[8.699444] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__description.c\n'}
+[8.699525] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__struct.h\n'}
+[8.699628] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__functions.c\n'}
+[8.699706] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.h\n'}
+[8.699784] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__functions.h\n'}
+[8.699860] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[8.699936] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/speed.h\n'}
+[8.700011] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[8.700103] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__type_support.c\n'}
+[8.700199] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__struct.h\n'}
+[8.700314] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__functions.c\n'}
+[8.700423] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__type_support.h\n'}
+[8.700516] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__description.c\n'}
+[8.700593] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__functions.h\n'}
+[8.700671] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[8.700745] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/square.h\n'}
+[8.700820] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[8.700895] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__type_support.h\n'}
+[8.701027] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.c\n'}
+[8.701104] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__description.c\n'}
+[8.701180] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__functions.c\n'}
+[8.701256] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__struct.h\n'}
+[8.701331] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.h\n'}
+[8.701443] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__struct.h\n'}
+[8.701520] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__description.c\n'}
+[8.701596] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__functions.h\n'}
+[8.701688] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__type_support.c\n'}
+[8.701774] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__functions.h\n'}
+[8.701858] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__functions.c\n'}
+[8.701953] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/go_to_pose.h\n'}
+[8.702057] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/library_path.sh\n'}
+[8.702148] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/library_path.dsv\n'}
+[8.702236] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so\n'}
+[8.702664] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so" to ""\n'}
+[8.702800] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[8.702878] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[8.702952] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.703025] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[8.703136] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[8.703208] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[8.703281] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[8.703405] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__rosidl_typesupport_fastrtps_c.h\n'}
+[8.703533] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[8.703611] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[8.703682] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__rosidl_typesupport_fastrtps_c.h\n'}
+[8.703752] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[8.703821] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[8.703916] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.704024] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[8.704119] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[8.704191] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[8.704263] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.c\n'}
+[8.704336] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[8.704451] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.704525] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[8.704596] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[8.704666] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__type_support.c\n'}
+[8.704736] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__rosidl_typesupport_introspection_c.h\n'}
+[8.704844] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[8.704919] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[8.705025] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.c\n'}
+[8.705096] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__rosidl_typesupport_introspection_c.h\n'}
+[8.705193] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_introspection_c.h\n'}
+[8.705263] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__type_support.c\n'}
+[8.705333] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[8.705444] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.705571] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so\n'}
+[8.705860] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[8.705963] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[8.706047] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[8.706120] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[8.706192] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__struct.hpp\n'}
+[8.706287] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.hpp\n'}
+[8.706394] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__traits.hpp\n'}
+[8.706477] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__builder.hpp\n'}
+[8.706551] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/target.hpp\n'}
+[8.706653] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.706765] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[8.706855] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[8.706930] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__traits.hpp\n'}
+[8.707030] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__builder.hpp\n'}
+[8.707107] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__struct.hpp\n'}
+[8.707180] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__type_support.hpp\n'}
+[8.707283] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/speed.hpp\n'}
+[8.707367] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[8.707460] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[8.707533] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__type_support.hpp\n'}
+[8.707605] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__struct.hpp\n'}
+[8.707677] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.hpp\n'}
+[8.707777] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__struct.hpp\n'}
+[8.707850] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__traits.hpp\n'}
+[8.707923] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__traits.hpp\n'}
+[8.708021] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__builder.hpp\n'}
+[8.708097] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__builder.hpp\n'}
+[8.708196] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/square.hpp\n'}
+[8.708269] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/go_to_pose.hpp\n'}
+[8.708407] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[8.708503] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[8.708578] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.708652] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[8.708725] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.708838] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/dds_fastrtps\n'}
+[8.708915] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[8.708988] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[8.709060] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.709133] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/dds_fastrtps\n'}
+[8.709228] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[8.709300] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[8.709385] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.709459] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/dds_fastrtps\n'}
+[8.709527] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.709596] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.709802] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.709911] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[8.710021] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[8.710096] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail\n'}
+[8.710168] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.710241] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/msg/detail/target__type_support.cpp\n'}
+[8.710348] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[8.710475] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[8.710545] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__type_support.cpp\n'}
+[8.710617] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.710691] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[8.710768] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[8.710865] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__type_support.cpp\n'}
+[8.710971] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/square__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.711045] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.711117] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/go_to_pose__type_support.cpp\n'}
+[8.711210] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[8.711637] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.711760] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so\n'}
+[8.712229] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[8.712333] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/pythonpath.sh\n'}
+[8.712441] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/pythonpath.dsv\n'}
+[8.712516] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info\n'}
+[8.712589] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[8.712691] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[8.712771] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[8.712845] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[8.712945] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces\n'}
+[8.713021] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg\n'}
+[8.713094] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/_target.py\n'}
+[8.713190] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/__init__.py\n'}
+[8.713262] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/_target_s.c\n'}
+[8.713370] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv\n'}
+[8.713452] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/_speed.py\n'}
+[8.713525] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/__init__.py\n'}
+[8.713599] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/_speed_s.c\n'}
+[8.713698] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action\n'}
+[8.713771] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_square_s.c\n'}
+[8.713844] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_go_to_pose.py\n'}
+[8.713942] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/__init__.py\n'}
+[8.714056] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_square.py\n'}
+[8.714161] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_go_to_pose_s.c\n'}
+[8.714272] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/__init__.py\n'}
+[8.714388] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[8.714510] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[8.714606] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so\n'}
+[8.714710] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[8.714859] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.715056] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.735674] (-) TimerEvent: {}
+[8.785828] (my_interfaces) StdoutLine: {'line': b"Listing '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces'...\n"}
+[8.786056] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/__init__.py'...\n"}
+[8.786142] (my_interfaces) StdoutLine: {'line': b"Listing '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action'...\n"}
+[8.786215] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/__init__.py'...\n"}
+[8.786292] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_go_to_pose.py'...\n"}
+[8.786398] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/action/_square.py'...\n"}
+[8.786476] (my_interfaces) StdoutLine: {'line': b"Listing '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg'...\n"}
+[8.786551] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/__init__.py'...\n"}
+[8.786621] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/msg/_target.py'...\n"}
+[8.786705] (my_interfaces) StdoutLine: {'line': b"Listing '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv'...\n"}
+[8.786810] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/__init__.py'...\n"}
+[8.786894] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/srv/_speed.py'...\n"}
+[8.795026] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[8.795288] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.795484] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[8.795744] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.795929] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so\n'}
+[8.796183] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[8.796320] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so\n'}
+[8.796642] (my_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/habiba/uni_ws/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so" to ""\n'}
+[8.796730] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust\n'}
+[8.796836] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/Cargo.toml\n'}
+[8.796946] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src\n'}
+[8.797024] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/msg\n'}
+[8.797098] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/msg/rmw.rs\n'}
+[8.797180] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/srv\n'}
+[8.797284] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/srv/rmw.rs\n'}
+[8.797383] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/action\n'}
+[8.797465] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/action/rmw.rs\n'}
+[8.797539] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/action.rs\n'}
+[8.797634] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/msg.rs\n'}
+[8.797730] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/srv.rs\n'}
+[8.797807] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/src/lib.rs\n'}
+[8.797908] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/rust/build.rs\n'}
+[8.797981] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/msg/Target.idl\n'}
+[8.798054] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/srv/Speed.idl\n'}
+[8.798172] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/action/GoToPose.idl\n'}
+[8.798268] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/action/Square.idl\n'}
+[8.798350] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/msg/Target.msg\n'}
+[8.798457] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/srv/Speed.srv\n'}
+[8.798534] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/action/GoToPose.action\n'}
+[8.798635] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/action/Square.action\n'}
+[8.798713] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/ament_index/resource_index/package_run_dependencies/my_interfaces\n'}
+[8.798786] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/ament_index/resource_index/parent_prefix_path/my_interfaces\n'}
+[8.798858] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.sh\n'}
+[8.798931] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.dsv\n'}
+[8.799003] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/path.sh\n'}
+[8.799074] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/environment/path.dsv\n'}
+[8.799200] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/local_setup.bash\n'}
+[8.799288] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/local_setup.sh\n'}
+[8.799399] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/local_setup.zsh\n'}
+[8.799490] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/local_setup.dsv\n'}
+[8.799564] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/package.dsv\n'}
+[8.799649] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/ament_index/resource_index/packages/my_interfaces\n'}
+[8.799754] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport.cmake\n'}
+[8.799828] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.799901] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.799975] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.800049] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.800122] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.800196] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[8.800269] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.800350] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cppExport.cmake\n'}
+[8.800482] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.800556] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.800629] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.800701] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.800773] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[8.800846] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.800919] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport.cmake\n'}
+[8.800991] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.801091] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[8.801161] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.801229] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.801298] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.801387] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.801461] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.801530] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.801599] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[8.801667] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig.cmake\n'}
+[8.801734] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig-version.cmake\n'}
+[8.801802] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/habiba/uni_ws/install/my_interfaces/share/my_interfaces/package.xml\n'}
+[8.802349] (my_interfaces) CommandEnded: {'returncode': 0}
+[8.827380] (my_interfaces) JobEnded: {'identifier': 'my_interfaces', 'rc': 0}
+[8.828627] (turtle_control) JobStarted: {'identifier': 'turtle_control'}
+[8.835761] (-) TimerEvent: {}
+[8.936017] (-) TimerEvent: {}
+[9.036247] (-) TimerEvent: {}
+[9.136462] (-) TimerEvent: {}
+[9.236710] (-) TimerEvent: {}
+[9.336962] (-) TimerEvent: {}
+[9.437206] (-) TimerEvent: {}
+[9.537458] (-) TimerEvent: {}
+[9.637700] (-) TimerEvent: {}
+[9.737946] (-) TimerEvent: {}
+[9.838204] (-) TimerEvent: {}
+[9.858857] (turtle_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_control', 'build', '--build-base', '/home/habiba/uni_ws/build/turtle_control/build', 'install', '--record', '/home/habiba/uni_ws/build/turtle_control/install.log', '--install-scripts', '$base/lib/turtle_control', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/habiba/uni_ws/src/turtle_control', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LINOROBOT2_BASE': '4wd', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/3062-1-habiba-Precision-3551_TIME1445995', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'habiba', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'STM32CubeMX_PATH': '/home/habiba/STM32CubeMX', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/habiba/uni_ws/install/my_interfaces/lib:/home/habiba/uros_ws/install/micro_ros_agent/lib:/home/habiba/uros_ws/install/micro_ros_msgs/lib:/home/habiba/uros_ws/install/drive_base_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/habiba', 'OLDPWD': '/home/habiba/uni_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'MANAGERPID': '2671', 'SYSTEMD_EXEC_PID': '3062', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5556', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/habiba/uni_ws/install:/home/habiba/uros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'habiba', 'JOURNAL_STREAM': '8:23122', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'habiba', 'STM32_PRG_PATH': '/home/habiba/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/habiba/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/habiba-Precision-3551:@/tmp/.ICE-unix/3018,unix/habiba-Precision-3551:/tmp/.ICE-unix/3018', 'INVOCATION_ID': '4648c3388b7b464f912cc319a7412e9b', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/habiba/uni_ws/install/my_interfaces:/home/habiba/uni_ws/install/interfaces:/home/habiba/uros_ws/install/micro_ros_setup:/home/habiba/uros_ws/install/micro_ros_agent:/home/habiba/uros_ws/install/micro_ros_msgs:/home/habiba/uros_ws/install/drive_base_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:d471cf8b-8996-49df-87c8-8647669b3511', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/habiba/uni_ws/build/turtle_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/habiba/uni_ws/build/turtle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages:/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:/home/habiba/uros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/habiba/uros_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/habiba/uni_ws/install/my_interfaces:/home/habiba/uros_ws/install/micro_ros_setup:/home/habiba/uros_ws/install/micro_ros_agent:/home/habiba/uros_ws/install/micro_ros_msgs:/home/habiba/uros_ws/install/drive_base_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[9.938280] (-) TimerEvent: {}
+[10.038505] (-) TimerEvent: {}
+[10.138705] (-) TimerEvent: {}
+[10.216295] (turtle_control) StdoutLine: {'line': b'running egg_info\n'}
+[10.238787] (-) TimerEvent: {}
+[10.245007] (turtle_control) StdoutLine: {'line': b'writing ../../build/turtle_control/turtle_control.egg-info/PKG-INFO\n'}
+[10.245189] (turtle_control) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_control/turtle_control.egg-info/dependency_links.txt\n'}
+[10.245356] (turtle_control) StdoutLine: {'line': b'writing requirements to ../../build/turtle_control/turtle_control.egg-info/requires.txt\n'}
+[10.245544] (turtle_control) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_control/turtle_control.egg-info/top_level.txt\n'}
+[10.300731] (turtle_control) StdoutLine: {'line': b"reading manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'\n"}
+[10.301441] (turtle_control) StdoutLine: {'line': b"writing manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'\n"}
+[10.301681] (turtle_control) StdoutLine: {'line': b'running build\n'}
+[10.301788] (turtle_control) StdoutLine: {'line': b'running build_py\n'}
+[10.301912] (turtle_control) StdoutLine: {'line': b'copying turtle_control/speed_param_server.py -> /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control\n'}
+[10.302017] (turtle_control) StdoutLine: {'line': b'copying turtle_control/reset_server.py -> /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control\n'}
+[10.302114] (turtle_control) StdoutLine: {'line': b'copying turtle_control/Square_server.py -> /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control\n'}
+[10.302210] (turtle_control) StdoutLine: {'line': b'copying turtle_control/goToPose_server.py -> /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control\n'}
+[10.302372] (turtle_control) StdoutLine: {'line': b'running install\n'}
+[10.309257] (turtle_control) StdoutLine: {'line': b'running install_lib\n'}
+[10.336875] (turtle_control) StdoutLine: {'line': b'copying /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control/speed_param_server.py -> /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control\n'}
+[10.337066] (turtle_control) StdoutLine: {'line': b'copying /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control/reset_server.py -> /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control\n'}
+[10.337181] (turtle_control) StdoutLine: {'line': b'copying /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control/Square_server.py -> /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control\n'}
+[10.337258] (turtle_control) StdoutLine: {'line': b'copying /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control/goToPose_server.py -> /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control\n'}
+[10.337720] (turtle_control) StdoutLine: {'line': b'byte-compiling /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control/speed_param_server.py to speed_param_server.cpython-312.pyc\n'}
+[10.338460] (turtle_control) StdoutLine: {'line': b'byte-compiling /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control/reset_server.py to reset_server.cpython-312.pyc\n'}
+[10.338657] (turtle_control) StdoutLine: {'line': b'byte-compiling /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control/Square_server.py to Square_server.cpython-312.pyc\n'}
+[10.338825] (turtle_control) StdoutLine: {'line': b'byte-compiling /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control/goToPose_server.py to goToPose_server.cpython-312.pyc\n'}
+[10.338901] (-) TimerEvent: {}
+[10.338993] (turtle_control) StdoutLine: {'line': b'running install_data\n'}
+[10.339100] (turtle_control) StdoutLine: {'line': b'copying package.xml -> /home/habiba/uni_ws/install/turtle_control/share/turtle_control\n'}
+[10.339199] (turtle_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.369010] (turtle_control) StdoutLine: {'line': b"removing '/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[10.369190] (turtle_control) StdoutLine: {'line': b'Copying ../../build/turtle_control/turtle_control.egg-info to /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info\n'}
+[10.370016] (turtle_control) StdoutLine: {'line': b'running install_scripts\n'}
+[10.438990] (-) TimerEvent: {}
+[10.539187] (-) TimerEvent: {}
+[10.544138] (turtle_control) StdoutLine: {'line': b"writing list of installed files to '/home/habiba/uni_ws/build/turtle_control/install.log'\n"}
+[10.574961] (turtle_control) CommandEnded: {'returncode': 0}
+[10.581699] (turtle_control) JobEnded: {'identifier': 'turtle_control', 'rc': 0}
+[10.582222] (-) EventReactorShutdown: {}

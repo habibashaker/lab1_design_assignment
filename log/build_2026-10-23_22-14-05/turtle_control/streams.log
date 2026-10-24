@@ -1,0 +1,24 @@
+[1.096s] Invoking command in '/home/habiba/uni_ws/src/turtle_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/habiba/uni_ws/build/turtle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages:/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages:/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:/home/habiba/uros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/habiba/uros_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_control build --build-base /home/habiba/uni_ws/build/turtle_control/build install --record /home/habiba/uni_ws/build/turtle_control/install.log --install-scripts $base/lib/turtle_control --single-version-externally-managed install_data
+[1.453s] running egg_info
+[1.480s] writing ../../build/turtle_control/turtle_control.egg-info/PKG-INFO
+[1.480s] writing dependency_links to ../../build/turtle_control/turtle_control.egg-info/dependency_links.txt
+[1.480s] writing entry points to ../../build/turtle_control/turtle_control.egg-info/entry_points.txt
+[1.481s] writing requirements to ../../build/turtle_control/turtle_control.egg-info/requires.txt
+[1.481s] writing top-level names to ../../build/turtle_control/turtle_control.egg-info/top_level.txt
+[1.536s] reading manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'
+[1.537s] writing manifest file '../../build/turtle_control/turtle_control.egg-info/SOURCES.txt'
+[1.537s] running build
+[1.537s] running build_py
+[1.537s] copying turtle_control/goToPose_server.py -> /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control
+[1.538s] running install
+[1.544s] running install_lib
+[1.573s] copying /home/habiba/uni_ws/build/turtle_control/build/lib/turtle_control/goToPose_server.py -> /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control
+[1.573s] byte-compiling /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control/goToPose_server.py to goToPose_server.cpython-312.pyc
+[1.575s] running install_data
+[1.575s] running install_egg_info
+[1.603s] removing '/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.604s] Copying ../../build/turtle_control/turtle_control.egg-info to /home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages/turtle_control-0.0.0-py3.12.egg-info
+[1.604s] running install_scripts
+[1.786s] Installing turtle_control script to /home/habiba/uni_ws/install/turtle_control/lib/turtle_control
+[1.787s] writing list of installed files to '/home/habiba/uni_ws/build/turtle_control/install.log'
+[1.822s] Invoked command in '/home/habiba/uni_ws/src/turtle_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/habiba/uni_ws/build/turtle_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages:/home/habiba/uni_ws/install/my_interfaces/lib/python3.12/site-packages:/home/habiba/uni_ws/install/turtle_control/lib/python3.12/site-packages:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:/home/habiba/uros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/habiba/uros_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_control build --build-base /home/habiba/uni_ws/build/turtle_control/build install --record /home/habiba/uni_ws/build/turtle_control/install.log --install-scripts $base/lib/turtle_control --single-version-externally-managed install_data

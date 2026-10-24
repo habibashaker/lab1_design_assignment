@@ -1,0 +1,4 @@
+[console_scripts]
+reset_server = turtle_control.reset_server:main
+square_server = turtle_control.Square_server:main
+turtle_control = turtle_control.goToPose_server:main

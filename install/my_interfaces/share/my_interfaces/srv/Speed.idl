@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_interfaces/srv/Speed.srv
+// generated code does not contain a copyright notice
+
+
+module my_interfaces {
+  module srv {
+    struct Speed_Request {
+      float max_linear_speed;
+
+      float max_angular_speed;
+    };
+    struct Speed_Response {
+      boolean done;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,32 @@
+[1.101s] Invoking command in '/home/habiba/uni_ws/src/interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/habiba/uni_ws/build/interfaces/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/interfaces build --build-base /home/habiba/uni_ws/build/interfaces/build install --record /home/habiba/uni_ws/build/interfaces/install.log --install-scripts $base/lib/interfaces --single-version-externally-managed install_data
+[1.417s] running egg_info
+[1.418s] creating ../../build/interfaces/interfaces.egg-info
+[1.443s] writing ../../build/interfaces/interfaces.egg-info/PKG-INFO
+[1.444s] writing dependency_links to ../../build/interfaces/interfaces.egg-info/dependency_links.txt
+[1.444s] writing requirements to ../../build/interfaces/interfaces.egg-info/requires.txt
+[1.444s] writing top-level names to ../../build/interfaces/interfaces.egg-info/top_level.txt
+[1.444s] writing manifest file '../../build/interfaces/interfaces.egg-info/SOURCES.txt'
+[1.496s] reading manifest file '../../build/interfaces/interfaces.egg-info/SOURCES.txt'
+[1.497s] writing manifest file '../../build/interfaces/interfaces.egg-info/SOURCES.txt'
+[1.497s] running build
+[1.497s] running build_py
+[1.497s] creating /home/habiba/uni_ws/build/interfaces/build
+[1.497s] creating /home/habiba/uni_ws/build/interfaces/build/lib
+[1.497s] creating /home/habiba/uni_ws/build/interfaces/build/lib/interfaces
+[1.497s] copying interfaces/__init__.py -> /home/habiba/uni_ws/build/interfaces/build/lib/interfaces
+[1.497s] running install
+[1.504s] running install_lib
+[1.530s] creating /home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages/interfaces
+[1.530s] copying /home/habiba/uni_ws/build/interfaces/build/lib/interfaces/__init__.py -> /home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages/interfaces
+[1.531s] byte-compiling /home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages/interfaces/__init__.py to __init__.cpython-312.pyc
+[1.531s] running install_data
+[1.531s] creating /home/habiba/uni_ws/install/interfaces/share/ament_index
+[1.531s] creating /home/habiba/uni_ws/install/interfaces/share/ament_index/resource_index
+[1.531s] creating /home/habiba/uni_ws/install/interfaces/share/ament_index/resource_index/packages
+[1.532s] copying resource/interfaces -> /home/habiba/uni_ws/install/interfaces/share/ament_index/resource_index/packages
+[1.532s] copying package.xml -> /home/habiba/uni_ws/install/interfaces/share/interfaces
+[1.532s] running install_egg_info
+[1.559s] Copying ../../build/interfaces/interfaces.egg-info to /home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info
+[1.560s] running install_scripts
+[1.717s] writing list of installed files to '/home/habiba/uni_ws/build/interfaces/install.log'
+[1.744s] Invoked command in '/home/habiba/uni_ws/src/interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/habiba/uni_ws/build/interfaces/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/habiba/uni_ws/install/interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/interfaces build --build-base /home/habiba/uni_ws/build/interfaces/build install --record /home/habiba/uni_ws/build/interfaces/install.log --install-scripts $base/lib/interfaces --single-version-externally-managed install_data

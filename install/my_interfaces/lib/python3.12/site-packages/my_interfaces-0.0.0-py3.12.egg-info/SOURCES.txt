@@ -1,0 +1,13 @@
+setup.py
+my_interfaces/__init__.py
+my_interfaces.egg-info/PKG-INFO
+my_interfaces.egg-info/SOURCES.txt
+my_interfaces.egg-info/dependency_links.txt
+my_interfaces.egg-info/top_level.txt
+my_interfaces/action/__init__.py
+my_interfaces/action/_go_to_pose.py
+my_interfaces/action/_square.py
+my_interfaces/msg/__init__.py
+my_interfaces/msg/_target.py
+my_interfaces/srv/__init__.py
+my_interfaces/srv/_speed.py
