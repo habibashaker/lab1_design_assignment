@@ -1,5 +1,0 @@
-float32 side_length
----
-bool done
----
-int32 sides_done

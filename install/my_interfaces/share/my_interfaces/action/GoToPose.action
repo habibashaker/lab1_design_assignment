@@ -1,5 +1,0 @@
-my_interfaces/Target target_point
----
-bool done
----
-float32 remaining_distance
