@@ -15,7 +15,7 @@ class SquareServer(Node):
     def __init__(self):
         super().__init__('square_server')
 
-        # Client for the go_to_pose action server
+        # Client for the GoToPose action server
         self.go_to_pose_client = ActionClient(
             self,
             GoToPose,
@@ -37,12 +37,14 @@ class SquareServer(Node):
             goal_callback=self.goal_callback
         )
 
-        self.get_logger().info('Square action server is ready')
+        self.get_logger().info(
+            'Square action server is ready'
+        )
 
     def goal_callback(self, goal_request):
         side = float(goal_request.side_length)
 
-        # Prevent invalid dimensions and keep the square in bounds
+        # Accept only valid side lengths
         if not math.isfinite(side) or side <= 0.0 or side > 5.0:
             self.get_logger().warning(
                 'Rejected goal: side_length must be greater than 0 '
@@ -53,7 +55,6 @@ class SquareServer(Node):
         return GoalResponse.ACCEPT
 
     async def reset_turtle(self):
-        # wait_for_service is synchronous; do not await it
         if not self.reset_client.wait_for_service(timeout_sec=5.0):
             self.get_logger().error(
                 'Reset service /reset_turtle is unavailable'
@@ -61,8 +62,7 @@ class SquareServer(Node):
             return False
 
         request = Trigger.Request()
-        future = self.reset_client.call_async(request)
-        response = await future
+        response = await self.reset_client.call_async(request)
 
         if response is None or not response.success:
             message = (
@@ -93,8 +93,7 @@ class SquareServer(Node):
             goal_handle.abort()
             return result
 
-        # Step 2: Define four corners.
-        # The reset service places the turtle at the center.
+        # Step 2: Define the four corners
         center_x = 5.544445
         center_y = 5.544445
 
@@ -105,7 +104,7 @@ class SquareServer(Node):
             (center_x, center_y, -math.pi / 2.0),
         ]
 
-        # Step 3: Execute exactly four movement goals sequentially
+        # Step 3: Move to each corner sequentially
         for index, (x, y, yaw) in enumerate(corners, start=1):
 
             if goal_handle.is_cancel_requested:
@@ -120,26 +119,27 @@ class SquareServer(Node):
                 f'x={x:.2f}, y={y:.2f}, yaw={yaw:.2f}'
             )
 
-            # Wait for the go_to_pose action server
+            # Wait for GoToPose server
             if not self.go_to_pose_client.wait_for_server(
                 timeout_sec=5.0
             ):
                 self.get_logger().error(
-                    'go_to_pose action server is unavailable'
+                    'GoToPose action server is unavailable'
                 )
                 goal_handle.abort()
                 return result
 
-            # Build the movement goal using your Target message
+            # Create movement goal
             goal = GoToPose.Goal()
             goal.target_point = Target()
             goal.target_point.x = x
             goal.target_point.y = y
             goal.target_point.yaw = yaw
 
-            # Send the movement goal
-            send_future = self.go_to_pose_client.send_goal_async(goal)
-            movement_handle = await send_future
+            # Send movement goal
+            movement_handle = await (
+                self.go_to_pose_client.send_goal_async(goal)
+            )
 
             if not movement_handle.accepted:
                 self.get_logger().error(
@@ -148,13 +148,12 @@ class SquareServer(Node):
                 goal_handle.abort()
                 return result
 
-            # Wait for the movement to finish before continuing
-            movement_result_future = (
+            # Wait until movement finishes
+            movement_result = await (
                 movement_handle.get_result_async()
             )
-            movement_result = await movement_result_future
 
-            # ROS action status 4 means SUCCEEDED
+            # Check whether movement succeeded
             if movement_result.status != 4:
                 self.get_logger().error(
                     f'Movement goal {index} did not succeed'
@@ -162,7 +161,6 @@ class SquareServer(Node):
                 goal_handle.abort()
                 return result
 
-            # Verify the actual GoToPose result field
             if not movement_result.result.done:
                 self.get_logger().error(
                     f'Movement server reported failure on goal {index}'
@@ -170,22 +168,28 @@ class SquareServer(Node):
                 goal_handle.abort()
                 return result
 
+            # Publish feedback after each completed side
+            feedback = Square.Feedback()
+            feedback.sides_done = index
+            goal_handle.publish_feedback(feedback)
+
             self.get_logger().info(
                 f'Side {index}/4 completed'
             )
 
-        # Step 4: Report success
+        # Step 4: Report successful completion
         result.done = True
         goal_handle.succeed()
 
-        self.get_logger().info('Square drawing completed successfully')
+        self.get_logger().info(
+            'Square drawing completed successfully'
+        )
 
         return result
 
 
 def main(args=None):
     rclpy.init(args=args)
-
     node = SquareServer()
 
     try:
